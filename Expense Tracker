@@ -1,0 +1,65 @@
+import tkinter as tk
+
+class ExpenseTrackerGUI:
+    def __init__(self):
+        self.expenses = []
+
+        self.window = tk.Tk()
+        self.window.title("Expense Tracker")
+
+        # Create labels and entry fields
+        date_label = tk.Label(self.window, text="Date:")
+        date_label.pack()
+        self.date_entry = tk.Entry(self.window)
+        self.date_entry.pack()
+
+        category_label = tk.Label(self.window, text="Category:")
+        category_label.pack()
+        self.category_entry = tk.Entry(self.window)
+        self.category_entry.pack()
+
+        description_label = tk.Label(self.window, text="Description:")
+        description_label.pack()
+        self.description_entry = tk.Entry(self.window)
+        self.description_entry.pack()
+
+        amount_label = tk.Label(self.window, text="Amount:")
+        amount_label.pack()
+        self.amount_entry = tk.Entry(self.window)
+        self.amount_entry.pack()
+
+        # Create buttons
+        add_button = tk.Button(self.window, text="Add Expense", command=self.add_expense)
+        add_button.pack()
+
+        total_button = tk.Button(self.window, text="Total Expenses", command=self.get_total_expenses)
+        total_button.pack()
+
+        self.result_label = tk.Label(self.window, text="")
+        self.result_label.pack()
+
+    def add_expense(self):
+        date = self.date_entry.get()
+        category = self.category_entry.get()
+        description = self.description_entry.get()
+        amount = float(self.amount_entry.get())
+
+        expense = {
+            'date': date,
+            'category': category,
+            'description': description,
+            'amount': amount
+        }
+        self.expenses.append(expense)
+        self.result_label.config(text="Expense added successfully!")
+
+    def get_total_expenses(self):
+        total_expenses = sum(expense['amount'] for expense in self.expenses)
+        self.result_label.config(text="Total expenses: Rs" + str(total_expenses))
+
+    def run(self):
+        self.window.mainloop()
+
+# Usage example
+tracker = ExpenseTrackerGUI()
+tracker.run()
