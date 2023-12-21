@@ -1,0 +1,6 @@
+# write a python program to access the variable from class
+
+class A:
+    x=4
+a=A()
+print("value of x:= " ,a.x)

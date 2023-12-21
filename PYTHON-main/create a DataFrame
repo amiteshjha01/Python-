@@ -1,0 +1,9 @@
+import pandas as pd
+
+data = {
+    'Subjects': ['EAI301', 'EAI302', 'EAI303'],
+    'Marks': [58, 65, 84]
+}
+
+df = pd.DataFrame(data)
+print(df)

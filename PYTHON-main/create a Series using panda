@@ -1,0 +1,4 @@
+import pandas as pd
+data=[2,4,1,9]
+S1=pd.Series(data)
+print(S1)

@@ -1,0 +1,11 @@
+# Determine and print the number of dimensions (ndim) for each array
+
+import numpy as np
+
+array1 = np.array([48])  # Corrected to use square brackets
+array2 = np.array([1, 5, 8, 0])
+array3 = np.array([[6, 0, 9, 14], [9, 11, 8, 3]])
+
+print(array1.ndim)
+print(array2.ndim)  # Corrected typo: "ndim" instead of "nim"
+print(array3.ndim)

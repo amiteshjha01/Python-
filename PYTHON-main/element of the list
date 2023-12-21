@@ -1,0 +1,6 @@
+# print the element of the list with the help of for loop
+
+
+l=[6,8,91,84,26]
+for i in l:
+   print(i)

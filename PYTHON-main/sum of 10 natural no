@@ -1,0 +1,12 @@
+# find the sum of 10 natural numbers taking input from user which are divisible by 3
+
+count = 0  
+sum_of_numbers = 0  
+number = 1
+while count < 10:
+    if number % 3 == 0:
+        sum_of_numbers += number
+        count += 1
+    number += 1
+
+print("Sum of the first 10 natural numbers divisible by 3:", sum_of_numbers)

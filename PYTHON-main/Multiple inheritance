@@ -1,0 +1,42 @@
+# multiple inheritance
+
+class Student:
+    def __init__(self, student_id, name):
+        self.student_id = student_id
+        self.name = name
+
+class Marks(Student):
+    def __init__(self, student_id, name, subject, score):
+        Student.__init__(self, student_id, name)
+        self.subject = subject
+        self.score = score
+
+    def display_marks(self):
+        print(f"{self.name}'s marks in {self.subject}: {self.score}")
+
+class Attendance(Student):
+    def __init__(self, student_id, name, date, status):
+        Student.__init__(self, student_id, name)
+        self.date = date
+        self.status = status
+
+    def display_attendance(self):
+        print(f"{self.name}'s attendance on {self.date}: {self.status}")
+
+class Games(Student):
+    def __init__(self, student_id, name, game_id, credits):
+        Student.__init__(self, student_id, name)
+        self.game_id = game_id
+        self.credits = credits
+
+    def display_game_info(self):
+        print(f"{self.name} with ID {self.game_id} has {self.credits} credits.")
+
+# Corrected instantiation
+student1 = Marks(1, "Amitesh", "Physics", 90)
+student2 = Attendance(2, "Ram", "2023-10-11", "Present")
+student3 = Games(3, "Guru", 101, 50)
+
+student1.display_marks()
+student2.display_attendance()
+student3.display_game_info()

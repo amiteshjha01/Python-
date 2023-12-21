@@ -1,0 +1,12 @@
+# write a python program to add two numbers using constructor
+
+class A:
+    def __init__(self, x,y):
+        self.x =x
+        self.y=y
+
+    def sum(self):
+        print("x+y =", self.x+self.y)
+
+a=A(5,7)
+a.sum()

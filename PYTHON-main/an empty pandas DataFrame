@@ -1,0 +1,5 @@
+# creates an empty pandas DataFrame using the pd.DataFrame() constructor and then prints the empty DataFrame.
+
+import pandas as pd
+df=pd.DataFrame({ })
+print(df)

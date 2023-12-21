@@ -1,0 +1,8 @@
+# Find the sum of two numbers as passing the argument
+
+def f2(x,y):
+
+    return(x+y)
+z=f2(8,50)
+
+print("the sum of two numbers is :" , z)

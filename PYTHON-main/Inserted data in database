@@ -1,0 +1,24 @@
+import sqlite3
+
+con = sqlite3.connect('try.db')
+print("Database opened")
+
+con.execute('''CREATE TABLE TAB2 (
+        ID TEXT NOT NULL,
+        NAME TEXT NOT NULL,
+        SALARY INTEGER NULL
+    );''')
+print("Table created")
+
+cursor = con.cursor()
+cursor.execute("INSERT INTO TAB2 (ID, NAME, SALARY) VALUES ('M1001', 'RAM', 26000)")
+print("Data Inserted")
+
+cursor.execute("SELECT * FROM TAB2")
+for row in cursor.fetchall():
+    print("ID =", row[0])
+    print("NAME =", row[1])
+    print("SALARY =", row[2])
+
+cursor.close()
+con.close()

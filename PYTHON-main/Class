@@ -1,0 +1,8 @@
+# write a python program to create object and show the value of variable
+
+class A:
+    x=4
+    def show(self):
+        print("value of x : =", self.x)
+a=A()
+a.show()

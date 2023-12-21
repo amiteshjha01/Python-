@@ -1,0 +1,11 @@
+# Print the array with the help of numpy module.
+
+import numpy as np
+
+array1 = np.array([23])  # Corrected to use square brackets
+array2 = np.array([1, 4, 2, 5, 8])
+array3 = np.array([[2, 1, 0, 9], [3, 9, 11, 8]])
+
+print(array1)
+print(array2)
+print(array3)

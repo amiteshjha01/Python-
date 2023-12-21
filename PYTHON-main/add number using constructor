@@ -1,0 +1,14 @@
+# write a python program to add number using constructor while taking the input from the user
+
+class A:
+    def __init__(tmu, x,y):
+        tmu.x =x
+        tmu.y=y
+
+    def sum(tmu):
+        print(" value of x+y =", tmu.x+tmu.y)
+
+a=int(input("enter the number"))
+b=int(input("enter the number"))
+z=A(a,b)
+z.sum()

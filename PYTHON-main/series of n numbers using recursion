@@ -1,0 +1,14 @@
+#  Find the sum of series of n numbers using recursion
+#depth recursion
+# base recursion
+
+
+def rect(n):
+
+    if n==0:
+        return 0
+    else :
+        return (n+rect(n-1))
+z = rect(8)
+
+print(z)

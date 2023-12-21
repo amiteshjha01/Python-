@@ -1,0 +1,11 @@
+ # Create a dictionary and print it
+
+emp ={
+    "name" : "Ram",
+    "eid" : 101,
+    "skill" : ["java" , "python"]
+    }
+
+print(emp)
+print(emp["eid"])
+print(type(emp))

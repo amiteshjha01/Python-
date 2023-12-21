@@ -1,0 +1,8 @@
+ # Take an empty list and print the list taking element of list from the user
+a=[]
+for i in range(6):
+    x =int(input("enter the elements of the list"))
+    print(x)
+    a.append(x)
+print(a)
+print(type(a))

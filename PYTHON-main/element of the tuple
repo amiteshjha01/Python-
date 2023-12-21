@@ -1,0 +1,5 @@
+# print the element of the tuple with the help of for loop
+
+a=(2,5.4,True , 3+9j,[1,2,3])
+for i in a:
+    print(i)

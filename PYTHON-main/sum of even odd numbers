@@ -1,0 +1,22 @@
+#check wether the num is even or odd and find the sum of the odd and even numeber :
+even_numbers = []
+odd_numbers = []
+sum_even = 0
+sum_odd = 0
+
+for x in range(6):
+    num = int(input("enter the number: "))
+
+    if num % 2 == 0:
+        print("number is even")
+        even_numbers.append(num)
+        sum_even += num
+    else:
+        print("number is odd")
+        odd_numbers.append(num)
+        sum_odd += num
+
+print("Even numbers:", even_numbers)
+print("Odd numbers:", odd_numbers)
+print("Sum of even numbers:", sum_even)
+print("Sum of odd numbers:", sum_odd)

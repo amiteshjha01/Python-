@@ -1,0 +1,24 @@
+# write a program to implement bitwise operator
+
+# Bitwise AND (&) Operator
+
+
+a = 2   # binary: 0010
+b = 4    # binary: 0100
+result_and = a & b
+print("Bitwise AND:", result_and)  # Output: # Output: 0
+
+
+# Bitwise OR (|) Operator
+result_or = a | b
+print("Bitwise OR:", result_or)    # Output:  # Output: 6
+
+
+# Bitwise XOR (^) Operator
+result_xor = a ^ b
+print("Bitwise XOR:", result_xor)  # Output: # Output: 6
+
+
+# Bitwise NOT (~) Operator
+result_not_a = ~a
+print("Bitwise NOT for a:", result_not_a)  # Output: -3
